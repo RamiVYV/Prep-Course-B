@@ -20,28 +20,54 @@ function encuentraPares(array){
   // Devuelve un arreglo con los pares encontrados
   // en el arreglo de enteros pasado como parámetro
   // Tu código:
-  return array.filter((value) => value % 2 == 0)
+  // return array.filter((value) => value % 2 == 0)
 
-  
-}
+   let pares = [];
+   
+   for (let i = 0 ; i < array.length; i++){
+        if (array[i] % 2 == 0){
+          pares.push(array[i])
+        }
+   }
+    return pares
+   }
 
 function elevaAlCuadrado(array){
   // Devuelve un arreglo con cada número del array
   // elevado al cuadrado
   // Tu código:
-  return array.map((item) => Math.pow(item,2))
+  // return array.map((item) => Math.pow(item,2))
+
+    let cuadrado = [];
+    for (let i = 0 ; i< array.length; i++){
+        cuadrado.push(array[i]**2);
+    }
+    return cuadrado
+
 }
 
 function sumaArray(array){
   // Devuelve el resultado de sumar todos los elementos
   // de un arreglo de enteros dado
   // Tu código:
-  return array.reduce((preValue, currentValue) => preValue + currentValue)
+  // return array.reduce((preValue, currentValue) => preValue + currentValue)
+
+ let sumador = 0;
+
+  for(let i= 0; i<array.length; i++){
+    sumador = sumador  + array[i]
+  }
+  return sumador
 }
 
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
+  numToString = num + "";
+  return numToString.length
+
+  
+
 }
   
   

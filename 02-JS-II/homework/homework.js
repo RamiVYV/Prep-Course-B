@@ -5,7 +5,7 @@
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
-    // "Return" la string provista: str
+    // "Return" la string : strprovista
     // Tu código:
     return(str)
   }
@@ -87,8 +87,7 @@ function devolverString(str) {
   }
   
   function esPar(num) {
-    // Devuelve "true" si "num" es par
-    // De lo contrario, devuelve "false"
+  
     // Tu código:
     if(num % 2 === 0){
       return true
